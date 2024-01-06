@@ -1,0 +1,78 @@
+Удаленные репозитории
+
+1.	Введение в клонирование:
+git clone
+
+2.	Удаленные ветки в Git
+git commit
+git checkout o/main
+git commit
+
+3.	Git Fetch
+git fetch
+
+4.	Git Pull
+git pull
+
+5.	Симуляция совместной работы
+git clone
+git fakeTeamwork main 2
+git commit
+git pull
+
+6.	Git Push
+git commit
+git commit
+git push
+
+7.	Расхождение истории
+git clone
+git fakeTeamwork
+git commit
+git pull –rebase
+git push
+
+8.	Remote Rejected
+git branch feature
+git reset o/main
+git checkout feature
+git push
+
+
+Слияние фича-бранчей
+
+1.	git fetch
+git rebase o/main side1
+git rebase side1 side2
+git rebase side2 side3
+git rebase side3 main
+git puhs
+
+2.	git checkout main
+git pull
+git merge side1
+git merge side2
+git merge side3
+git push
+
+3. git checkout -b side o/main
+git commit
+git pull –rebase
+git push
+
+4. git push origin main
+git push origin foo
+
+5. git push origin main^:foo
+git push origin foo:main
+
+6. git fetch origin main~1:foo
+git fetch origin foo:main
+git checkout foo
+git merge main
+
+7. git push origin :foo
+git fetch origin :bar
+
+8.git pull origin bar:foo
+git pull origin main:side
