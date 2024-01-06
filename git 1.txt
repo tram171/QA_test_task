@@ -1,0 +1,47 @@
+Основы
+
+1.	Знакомство с git commit:
+git commit
+git commit
+
+2.	Ветвление в git:
+git branch bugFix 
+git checkout bugFix
+
+3.	Слияние веток:
+git branch bugFix
+git checkout bugFix
+git commit
+git checkout main
+git commit
+git merge bugFix
+
+4.	Введение в rebase:
+git branch bugFix
+git checkout bugFix 
+git commit
+git checkout main
+git commit
+git checkout bugFix
+git rebase main
+
+5.	Detached HEAD:
+git checkout C4
+
+6.	Относительные ссылки:
+git checkout bugFix
+git checkout bugFix^
+
+7.	Оператор «~»:
+git checkout main
+git branch -f main HEAD~3
+git merge C6
+git checkout bugFix
+git branch -f bugFix HEAD~3
+git checkout C1
+
+8.	Отмена изменений в Git:
+git reset HEAD~1
+git checkout pushed
+git revert HEAD
+
